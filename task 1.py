@@ -7,6 +7,8 @@ while True:
     print('Введите 2 числа и знак операции.')
     num_one = int(input('Введите первое число: '))
     operation = input('Введите знак. \n(-, +, /, * или 0, что бы выйти): ')
+    if operation == '0':
+        break;
     num_two = int(input('Введите второе число: '))
 
     if operation == "-":
@@ -21,10 +23,8 @@ while True:
         else:
             print('Ошибка! На ноль делить нельзя!!!')
             continue;
-    elif operation == 0:
-        break;
     else:
         print('Вы ввели некорректный знак...')
         continue;
 
-    print(res)
+    print(res) 
